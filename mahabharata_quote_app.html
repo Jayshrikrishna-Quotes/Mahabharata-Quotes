@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahabharata Wisdom</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f9f3e9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .quote-box {
+      max-width: 600px;
+      background: #fff9f0;
+      border: 2px solid #d4a373;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #d4a373;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #c57f3e;
+    }
+    header, footer {
+      margin: 20px 0;
+      font-weight: bold;
+      color: #5e3b0f;
+    }
+    img {
+      max-width: 200px;
+      margin: 10px auto;
+      border-radius: 12px;
+    }
+    .om-symbol {
+      font-size: 36px;
+      color: #a44a3f;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="om-symbol">🕉</div>
+
+  <header>
+    🌺 Welcome to Mahabharata Wisdom – One Quote at a Time 🌺
+  </header>
+
+  <img src="/mnt/data/ca352e632e43f2d2c72451ee21a6b101.jpg" alt="Lord Krishna" />
+
+  <div class="quote-box">
+    <h2>Mahabharata Quote</h2>
+    <p id="quote">Pray to Lord Krishna and click the button below to receive timeless wisdom.</p>
+    <button onclick="showQuote()">🙏 Show Me a Quote 🙏</button>
+  </div>
+
+  <footer>
+    May the divine teachings of Krishna guide your path with peace and clarity. Hare Krishna 🙏
+  </footer>
+
+  <script>
+    const quotes = [
+      "Even a little of good action can protect one from great fear.",
+      "Do your duty without attachment to success or failure.",
+      "Anger is the enemy of wisdom. Let it not control your soul.",
+      "A person is made by their faith; as one believes, so they become.",
+      "Greed, when unchecked, consumes all virtue and reason.",
+      "Self-control is the highest form of discipline.",
+      "He who does not abandon desire cannot attain peace.",
+      "One who sees inaction in action is wise among men.",
+      "Truth and kindness are the foundation of Dharma.",
+      "The mind is everything; it can make a heaven of hell or a hell of heaven."
+    ];
+
+    function showQuote() {
+      const index = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").textContent = quotes[index];
+    }
+  </script>
+</body>
+</html>
